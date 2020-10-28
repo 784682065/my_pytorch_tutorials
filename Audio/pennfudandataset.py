@@ -152,7 +152,7 @@ def get_model_instance_segmentation(num_classes):
 """
 把之前的全都集合起来
 """
-import transforms as T
+from Audio import transforms as T
 
 
 def get_transform(train):
@@ -184,7 +184,6 @@ dataset = PennFudanDataset('PennFudanPed', get_transform(train=True))
 # x = [torch.rand(3, 300, 400), torch.rand(3, 500, 400)]
 # predictions = model(x)  # Returns predictions
 
-from engine import train_one_epoch, evaluate
 import utils
 
 

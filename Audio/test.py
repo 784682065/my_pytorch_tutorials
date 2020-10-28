@@ -111,7 +111,9 @@ def get_model_instance_segmentation(num_classes):
 
     return model
 
-import transforms as T
+
+from Audio import transforms as T
+
 
 def get_transform(train):
     transforms = []
